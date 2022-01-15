@@ -1,17 +1,6 @@
 
 
 ##  :heart: Application Name: <b style="color:green;"> E Penguin Shop </>
-<p> Single Vendor Ecommerce web application </p>
-</b>
-
-![Admin Home Page](docs/images/admin-dashboard-dark.png)
-<p style="text-align:center"> (Image:  Admin Dashboard Dark Theme ) </p>
-
-![Admin ](docs/images/admin-dashboard-light.png)
-<p style="text-align:center"> (Image:  Admin Dashboard (Light Theme)) </p>
-
-![Home Page](docs/images/home.png)
-<p style="text-align:center"> (Image:  Home Page  </p>
 
  ## :hugs: Requirements
         *  PHP >= 7.3 
