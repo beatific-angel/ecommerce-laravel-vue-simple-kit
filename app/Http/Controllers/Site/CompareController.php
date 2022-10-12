@@ -39,7 +39,7 @@ class CompareController extends Controller
         $this->validate($request,[
             'id' => 'required',
             'name' => 'required',
-            'qty' => 'required',
+            'qty' => 'required|numeric',
             'price' => 'required',
             'size' => $request->size ? 'required' : '',
             'colour' => $request->colour ? 'required' : '',

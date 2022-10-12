@@ -44,12 +44,9 @@ class ProductController extends Controller
      */
     public function categoryProducts(Request $request , $categorySlug)
     {
-
-        // return Cache::remember('singleCategory.'.$categorySlug.$request->filter, now()->addMinutes(120), function () use ($categorySlug, $request) {
-            return Category::with(['products' => function ($q) use ($request) {
+        return Category::with(['products' => function ($q) use ($request) {
                 $q->priceFilter($request);
             }])->withCount('products')->with('category')->where('slug', $categorySlug)->firstOrFail();
-        // });
     }
 
     /**

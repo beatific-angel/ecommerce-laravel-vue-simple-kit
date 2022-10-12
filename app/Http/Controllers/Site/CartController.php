@@ -17,7 +17,6 @@ class CartController extends Controller
      */
     public function index()
     {
-        //   $carts   = Cart::instance('default')->restore(auth()->user()->email);
         $carts = Cart::content();
         $subtotal =  Cart::subtotal();
         $tax =  Cart::tax();
@@ -40,7 +39,7 @@ class CartController extends Controller
         $this->validate($request,[
             'id' => 'required',
             'name' => 'required',
-            'qty' => 'required',
+            'qty' => 'required | numeric',
             'price' => 'required',
             'size' => $request->size ? 'required' : '',
             'colour' => $request->colour ? 'required' : '',
