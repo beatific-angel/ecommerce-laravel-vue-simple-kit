@@ -39,7 +39,7 @@ class WishlistController extends Controller
         $this->validate($request,[
             'id' => 'required',
             'name' => 'required',
-            'qty' => 'required',
+            'qty' => 'required|numeric',
             'price' => 'required',
             'size' => $request->size ? 'required' : '',
             'colour' => $request->colour ? 'required' : '',
@@ -73,7 +73,6 @@ class WishlistController extends Controller
             return $this->index();
         }
 
-        // return Cart::add($id, $name , $qty, $price, $weight , [$options]); // Mind It we didn't store it into Database
     }
 
     /**

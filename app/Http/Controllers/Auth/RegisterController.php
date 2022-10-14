@@ -77,14 +77,6 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
 
-        // if (Auth::attempt(['email' => $data['email'], 'password' => $data['password'] ])) {
-        //     $user = Auth::user();
-        //     return response()->json([
-        //         'success' => true ,
-        //         'message' => 'User Register Successfully',
-        //         'user' => $user
-        //     ], 200);
-        // }
 
     }
     public function register(Request $request)

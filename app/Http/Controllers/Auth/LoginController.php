@@ -59,8 +59,6 @@ class LoginController extends Controller
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password], $request->remember)) {
             // email me /
             $user = Auth::user();
-            // event(new EventsAdminLoginAlert($User));
-            // dispatch(new SendEmailJobs($User));
             return response()->json([
                 'success' => true ,
                 'message' => 'User Login Successfully',
