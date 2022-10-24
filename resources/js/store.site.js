@@ -3,7 +3,7 @@
  */
 import Vue from 'vue';
 import Vuex from 'vuex';
-// import axios from "axios";
+import axios from "axios";
 import { createStore } from 'vuex-extensions'
 import createPersistedState from 'vuex-persistedstate'
 

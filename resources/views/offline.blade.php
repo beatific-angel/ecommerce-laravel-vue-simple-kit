@@ -45,20 +45,20 @@
         </div>
     </main>
 </div>
+<style lang="css">
 
-        <style lang="css">
+@media (max-width:600){
+    .top{
+        z-index: 1;
+        width: 110%;
+        height: 300px;
+        top: -0px;
+        left: -px;
+        transform: translate3d(0px, 4.67849px, 0px);
+    }
+}
+</style>
 
-        @media (max-width:600){
-            .top{
-                z-index: 1;
-                width: 110%;
-                height: 300px;
-                top: -0px;
-                left: -px;
-                transform: translate3d(0px, 4.67849px, 0px);
-            }
-        }
-        </style>
 
     <script src="{{asset('js/template-cachable.js')}}"></script>
 </body>
