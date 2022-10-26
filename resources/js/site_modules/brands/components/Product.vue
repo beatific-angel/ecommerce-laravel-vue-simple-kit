@@ -82,12 +82,6 @@
                 <div class="product-price">
                     $ {{ product.price }}
                 </div>
-                <div class="ratings-container">
-                    <div class="ratings">
-                        <div class="ratings-val" style="width: 20%;"></div>
-                    </div>
-                    <span class="ratings-text">( 3 Reviews )</span>
-                </div>
 
             </div>
         </div>
@@ -110,6 +104,6 @@ export default {
 
 <style lang="css">
 .product-image{
-    height: 250px;
+    height: 200px;
 }
 </style>

@@ -2,7 +2,6 @@ export default {
     async getBrands({commit}){
         try {
             let res = await axios.get('/api/brands');
-            // commit("FETCH_BRANDS", res.data);
             commit('changeState', {
                 brands : res.data
             })
@@ -16,7 +15,6 @@ export default {
             let res = await axios.get(`/api/brands/${slug}`, {
                 params: { filter : state.filter.brand }
             });
-            // commit("FETCH_BRAND", res.data);
             commit('changeState', {
                 brand : res.data.data
             })

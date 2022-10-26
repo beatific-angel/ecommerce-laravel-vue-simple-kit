@@ -24,6 +24,7 @@ export default {
             commit('changeState' , { cartData : res.data });
             $awn.success('Cart Updated Successfully')
         } catch (error) {
+            console.log(error);
             if (error.response.status == 422) {
                 $awn.warning(error.response.data.errors.qty[0]);
               }

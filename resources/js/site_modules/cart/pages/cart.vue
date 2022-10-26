@@ -7,7 +7,7 @@
                     <button @click="clearAllItem" class="btn btn-success"> Clear All </button>
                 </span>
             </div>
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered table-hover responsive-table">
                 <thead>
                     <tr>
                         <th>Product</th>
