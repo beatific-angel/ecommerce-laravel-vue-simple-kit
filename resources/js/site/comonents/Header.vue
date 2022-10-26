@@ -3,7 +3,7 @@
     <div class="header-top">
         <div class="container">
             <div class="header-left">
-                <router-link to="tel:+8801798037068"><i class="icon-phone"></i>Call: +8801798037068 </router-link>
+                <router-link to="tel:#"><i class="icon-phone"></i>Call: # </router-link>
             </div><!-- End .header-left -->
 
             <div class="header-right">
@@ -108,12 +108,6 @@
                             </div>
                         </div><!-- End .dropdown-menu -->
                     </div><!-- End .compare-dropdown -->
-
-                    <router-link to="/wishlists" class="wishlist-link">
-                        <i class="icon-heart-o"></i>
-                        <span class="wishlist-count">{{ wishlistData.count ? wishlistData.count : 0 }}</span>
-                        <span class="wishlist-txt">{{ $t('wishlist') }}</span>
-                    </router-link>
 
                     <div class="dropdown cart-dropdown">
                         <router-link to="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">

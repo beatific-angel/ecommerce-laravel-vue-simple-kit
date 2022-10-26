@@ -130,24 +130,6 @@
         </div><!-- End .container -->
     </div><!-- End .footer-middle -->
 
-    <div class="footer-bottom">
-        <div class="container">
-            <p class="footer-copyright">Copyright © 2020 Penguin Store. All Rights Reserved.</p><!-- End .footer-copyright -->
-            <ul class="footer-menu">
-                <li><router-link to="#">Terms Of Use</router-link></li>
-                <li><router-link to="#">Privacy Policy</router-link></li>
-            </ul><!-- End .footer-menu -->
-
-            <div class="social-icons social-icons-color">
-                <span class="social-label">Social Media</span>
-                <router-link to="http://facebook.com/samayunmc" class="social-icon social-facebook" title="Facebook" target="_blank"><i class="icon-facebook-f"></i></router-link>
-                <router-link to="#" class="social-icon social-twitter" title="Twitter" target="_blank"><i class="icon-twitter"></i></router-link>
-                <router-link to="#" class="social-icon social-instagram" title="Instagram" target="_blank"><i class="icon-instagram"></i></router-link>
-                <router-link to="#" class="social-icon social-youtube" title="Youtube" target="_blank"><i class="icon-youtube"></i></router-link>
-                <router-link to="#" class="social-icon social-pinterest" title="Pinterest" target="_blank"><i class="icon-pinterest"></i></router-link>
-            </div><!-- End .soial-icons -->
-        </div><!-- End .container -->
-    </div><!-- End .footer-bottom -->
 </footer><!-- End .footer -->
 
 </template>
