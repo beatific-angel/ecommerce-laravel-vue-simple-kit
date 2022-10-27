@@ -40,6 +40,7 @@ export default {
                 this.s(this.getDeleteModalObj.successMsg)
                 this.$store.commit('setDeleteModal', true)
 			}else{
+                console.log('false');
                 this.swr()
                 this.$store.commit('setDeleteModal', false)
             }

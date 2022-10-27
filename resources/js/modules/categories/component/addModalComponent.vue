@@ -134,9 +134,6 @@ export default {
         cursor: pointer;
         margin: 0 2px;
     }
-    /* .ivu-icon {
-        line-height: 58px;
-    } */
 </style>
 
 <i18n>
@@ -144,10 +141,6 @@ export default {
     "en" : {
         "click_here_upload" : "Click or drag files here to upload",
         "close": "Close"
-    },
-    "bn" : {
-        "click_here_upload" : "আপলোড করতে এখানে ক্লিক করুন",
-        "close" : "বন্ধ করুন"
     }
 }
 </i18n>
