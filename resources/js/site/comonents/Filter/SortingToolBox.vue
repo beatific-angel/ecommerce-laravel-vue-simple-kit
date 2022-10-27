@@ -17,11 +17,6 @@
                         <Option value="high_low" > High To Low prices </Option>
                     </Select>
 
-                    <Select v-model="filter.category" @change="SelectFilter('category')"  v-if="$route.path.includes('/category/')" >
-                        <Option disabled value="" selected> category Sorting: Please Select one </Option>
-                        <Option value="low_high" > Low To High Prices </Option>
-                        <Option value="high_low" > High To Low prices </Option>
-                    </Select>
                 </div>
             </div><!-- End .toolbox-sort -->
             <div class="toolbox-layout">

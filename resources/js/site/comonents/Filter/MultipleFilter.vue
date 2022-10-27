@@ -131,7 +131,6 @@
                                 <span id="filter-price-range">$0 - $${{  selected.prices?  selected.prices: 0 }}</span>
                             </div><!-- End .filter-price-text -->
 
-                            <!-- <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal"><div class="noUi-base"><div class="noUi-connects"><div class="noUi-connect" style="transform: translate(0%) scale(0.75, 1);"></div></div><div class="noUi-origin" style="transform: translate(-100%); z-index: 5;"><div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="550.0" aria-valuenow="0.0" aria-valuetext="$0"><div class="noUi-touch-area"></div><div class="noUi-tooltip">$0</div></div></div><div class="noUi-origin" style="transform: translate(-25%); z-index: 4;"><div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="200.0" aria-valuemax="1000.0" aria-valuenow="750.0" aria-valuetext="$750"><div class="noUi-touch-area"></div><div class="noUi-tooltip">$750</div></div></div></div></div> -->
                             <input type="range" min="0" max="750" v-model="selected.prices"/>
 
                         </div><!-- End .filter-price -->
@@ -172,9 +171,6 @@ export default {
     created(){
         this.fetchData();
     },
-    // mounted(){
-    //     this.fetchData();
-    // },
     watch:{
         "selected.categories" : function(e){
             this.getFilteredData();
