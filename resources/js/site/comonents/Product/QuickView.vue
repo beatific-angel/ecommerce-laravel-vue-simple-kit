@@ -1,8 +1,5 @@
 <template >
 <div class="container quickView-container" v-if="!$route.path.includes('/product/') && quickView.id" style="
-	position: absolute;
-	top: 0;
-	left: 0;
     z-index:9999;">
 	<div class="quickView-content">
 		<div class="row">
@@ -15,8 +12,6 @@
 						</a>
 					</div>
 					<div class="product-right">
-<!--                             :lazyLoad="true"
-                            :lazyLoadEager="3" -->
 						<carousel
                             :items="1"
 	                        :dots = "false"
@@ -34,7 +29,6 @@
                                 v-for="img in quickView.images"
                                 :key="img.id"
                                 :data-hash="`#${img.id}`">
-	                             <!-- <img :src="img.url" :alt="img.url" class="owl-lazy img-quickview"> -->
                                  <vueMagnifier
                                     :small-img="img.url"
                                     :big-img="img.url"
@@ -51,7 +45,7 @@
 
 			<div class="col-lg-5 col-md-6">
                 <div class="float-right">
-                    <button @click="changeState({ quickView: {} })"> X </button>
+                    <button> Close </button>
                 </div>
 				<h2 class="product-title"> {{ quickView.name }} </h2>
 				<h3 class="product-price">$ {{ quickView.price }} </h3>
@@ -135,11 +129,10 @@ export default {
    },
     methods : {
         ...mapMutations("productsStoreIndex" , ["changeState"]),
-        // ...mapActions("productsStoreIndex" , ["QuickView"])
     }
 }
 </script>
-<style lang="css" scoped>
+<style>
  .owl-carousel {
      display: block;
  }
