@@ -1,6 +1,6 @@
 
 
-##  :heart: Application Name: <b style="color:green;"> E Penguin Shop </>
+##  :heart: Application Name: <b style="color:green;"> E Laravel Shop </>
 
  ## :hugs: Requirements
         *  PHP >= 7.3 
@@ -57,7 +57,6 @@
     * Library : `IViewUi`, `Vue-owl-carousel`,`VueX`,`Vue-router`,`lodash`,`jQuery`,`axios`
     * `Admin LTE 3` in Admin Panel & Molla Ecommerce Template in Frontend
     * **Dynamic/ Auto Import Modules (Store, Routes) in frontend**
-    * **Localization : Mutliple Languege (Bangla :bangladesh:  + English :us:  implemented) by `vue-i18n`** 
     * Light/Dark Theme & Grid/List Layout
     * <u color="red">Code Spliting , Lazy Loading </u>, Less Ajax request
     * 
