@@ -54,12 +54,6 @@ class BrandController extends Controller
                 ]
             ], $FileError['status']);
         }
-        // // $uploadedFile = dispatch(new BrandImageUploading($request->logo));
-        $uploadedFile = $this->uploadBase64File($request->logo , 'brands/','public');
-        $attributes = [
-            'name' => $request->name,
-            'logo' => '/storage/brands/'.$uploadedFile['name']
-        ];
         return $this->brandrepositories->create($attributes);
     }
 

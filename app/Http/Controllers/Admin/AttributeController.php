@@ -91,9 +91,7 @@ class AttributeController extends Controller
             'slug' => 'required|unique:attributes,slug,'.$request->id,
             'parent_id' => $request->parent_id ? 'required' : ''
         ]);
-        // $attribute = Attribute::where('id',$request->id);
         return $attribute->update($request->except('id'));
-        // return new AttributeResource($request->all());
     }
 
     /**

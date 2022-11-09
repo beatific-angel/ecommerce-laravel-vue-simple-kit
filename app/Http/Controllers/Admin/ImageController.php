@@ -35,7 +35,6 @@ class ImageController extends Controller
         ]);
 
         $product = Product::find($request->productId);
-        // $images = collect($request->images);
         foreach ($request->images as $encoded_data) {
                 $newImage   = $this->base64ToImage($encoded_data)['image'];
                 $extension  = $this->base64ToImage($encoded_data)['extension'];
