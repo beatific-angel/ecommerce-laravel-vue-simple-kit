@@ -73,7 +73,6 @@ class CartController extends Controller
             return $this->index();
         }
 
-        // return Cart::add($id, $name , $qty, $price, $weight , [$options]); // Mind It we didn't store it into Database
     }
 
     /**

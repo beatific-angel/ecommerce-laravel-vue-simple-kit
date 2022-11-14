@@ -40,13 +40,12 @@ class WishlistController extends Controller
             'id' => 'required',
             'name' => 'required',
             'qty' => 'required|numeric',
-            'price' => 'required',
+            'price' => 'required|numeric',
             'size' => $request->size ? 'required' : '',
             'colour' => $request->colour ? 'required' : '',
             'image' => $request->image ? 'required' : '',
         ]);
 
-        // Cart::store('default'); // Store to DB (We'll add before Order)
         $id            = $request->id;
         $name          = $request->name;
         $price         = $request->price;

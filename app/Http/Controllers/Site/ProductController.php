@@ -93,10 +93,6 @@ class ProductController extends Controller
     public function ShopByBrands()
     {
         return Brand::withCount('products')->latest()->get();
-
-        // return Cache::remember('ShopByBrands', now()->addMinutes(120),function (){
-        //     return Brand::latest()->get();
-        // });
     }
     public function SingleBrand(Request $request, $slug)
     {
